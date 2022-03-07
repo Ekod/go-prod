@@ -1,5 +1,5 @@
-# go.uber.org/automaxprocs v1.4.0
+# github.com/emadolsky/automaxprocs v1.4.1-0.20220104203543-349281033d17
 ## explicit; go 1.13
-go.uber.org/automaxprocs/internal/cgroups
-go.uber.org/automaxprocs/internal/runtime
-go.uber.org/automaxprocs/maxprocs
+github.com/emadolsky/automaxprocs/internal/cgroups
+github.com/emadolsky/automaxprocs/internal/runtime
+github.com/emadolsky/automaxprocs/maxprocs

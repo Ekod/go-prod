@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"go.uber.org/automaxprocs/maxprocs"
+	"github.com/emadolsky/automaxprocs/maxprocs"
 )
 
 var build = "develop"

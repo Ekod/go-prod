@@ -60,4 +60,4 @@ kind-update-apply: all kind-load kind-apply
 
 kind-update: all kind-load kind-restart
 
-
+kind-full-setup: all kind-up kind-load kind-apply
