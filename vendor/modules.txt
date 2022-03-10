@@ -1,3 +1,11 @@
+# github.com/ardanlabs/conf/v3 v3.1.2
+## explicit; go 1.13
+github.com/ardanlabs/conf/v3
+# github.com/emadolsky/automaxprocs v1.4.1-0.20220104203543-349281033d17
+## explicit; go 1.13
+github.com/emadolsky/automaxprocs/internal/cgroups
+github.com/emadolsky/automaxprocs/internal/runtime
+github.com/emadolsky/automaxprocs/maxprocs
 # go.uber.org/atomic v1.7.0
 ## explicit; go 1.13
 go.uber.org/atomic
