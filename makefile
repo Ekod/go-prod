@@ -41,7 +41,7 @@ sales-api:
 # ==============================================================================
 # Running from within k8s/kind
 
-KIND_CLUSTER := ekod-starter-cluster
+KIND_CLUSTER := ekod-cluster
 
 kind-up:
 	kind create cluster \
