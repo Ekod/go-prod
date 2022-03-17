@@ -12,6 +12,19 @@ tidy:
 	go mod vendor
 
 # ==============================================================================
+#Environment setup
+dev.setup.mac:
+	brew update
+	brew list kind || brew install kind
+	brew list kubectl || brew install kubectl
+	brew list kustomize || brew install kustomize
+
+dev.setup.win:
+	choco list kind || choco install kind -y
+	choco list kubectl || choco install kubectl -y
+	choco list kustomize || choco install kustomize -y
+
+# ==============================================================================
 # Building containers
 
 VERSION := 1.0
