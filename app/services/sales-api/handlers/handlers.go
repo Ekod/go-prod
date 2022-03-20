@@ -8,29 +8,11 @@ import (
 	"os"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/v1/testgrp"
+	"github.com/Ekod/go-prod/foundation/web"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/debug/checkgrp"
-	"github.com/dimfeld/httptreemux/v5"
 	"go.uber.org/zap"
 )
-
-// APIMuxConfig contains all the mandatory systems required by handlers.
-type APIMuxConfig struct {
-	Shutdown chan os.Signal
-	Log      *zap.SugaredLogger
-}
-
-// APIMux constructs a http.Handler with all application routes defined.
-func APIMux(cfg APIMuxConfig) *httptreemux.ContextMux {
-	mux := httptreemux.NewContextMux()
-	tgh := testgrp.Handlers{
-		Log: cfg.Log,
-	}
-
-	mux.Handle(http.MethodGet, "/v1/test", tgh.Test)
-
-	return mux
-}
 
 // DebugStandardLibraryMux registers all the debug routes from the standard library
 // into a new mux bypassing the use of the DefaultServerMux. Using the
@@ -66,4 +48,34 @@ func DebugMux(build string, log *zap.SugaredLogger) http.Handler {
 	mux.HandleFunc("/debug/liveness", cgh.Liveness)
 
 	return mux
+}
+
+// APIMuxConfig contains all the mandatory systems required by handlers.
+type APIMuxConfig struct {
+	Shutdown chan os.Signal
+	Log      *zap.SugaredLogger
+}
+
+// APIMux constructs a http.Handler with all application routes defined.
+func APIMux(cfg APIMuxConfig) *web.App {
+
+	// Construct the web.App which holds all routes .
+	app := web.NewApp(
+		cfg.Shutdown,
+	)
+
+	v1(app, cfg)
+
+	return app
+}
+
+// Routes binds all the version 1 routes.
+func v1(app *web.App, cfg APIMuxConfig) {
+	const version = "v1"
+
+	tgh := testgrp.Handlers{
+		Log: cfg.Log,
+	}
+
+	app.Handle(http.MethodGet, version, "/test", tgh.Test)
 }
