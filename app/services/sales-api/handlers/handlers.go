@@ -8,6 +8,7 @@ import (
 	"os"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/v1/testgrp"
+	"github.com/Ekod/go-prod/business/web/mid"
 	"github.com/Ekod/go-prod/foundation/web"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/debug/checkgrp"
@@ -62,6 +63,7 @@ func APIMux(cfg APIMuxConfig) *web.App {
 	// Construct the web.App which holds all routes .
 	app := web.NewApp(
 		cfg.Shutdown,
+		mid.Logger(cfg.Log),
 	)
 
 	v1(app, cfg)
