@@ -50,7 +50,7 @@ kind-up:
 		--config zarf/k8s/kind/kind-config.yaml
 	kubectl config set-context --current --namespace=sales-system
 
-kind-down:
+d:
 	kind delete cluster --name $(KIND_CLUSTER)
 
 kind-load:
@@ -78,4 +78,4 @@ kind-update-apply: all kind-load kind-apply
 
 kind-update: all kind-load kind-restart
 
-kind-full-setup: all kind-up kind-load kind-apply
+u: all kind-up kind-load kind-apply
