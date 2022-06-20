@@ -4,17 +4,17 @@ github.com/ardanlabs/conf/v3
 # github.com/dimfeld/httptreemux/v5 v5.4.0
 ## explicit; go 1.9
 github.com/dimfeld/httptreemux/v5
-# github.com/emadolsky/automaxprocs v1.4.1-0.20220104203543-349281033d17
-## explicit; go 1.13
-github.com/emadolsky/automaxprocs/internal/cgroups
-github.com/emadolsky/automaxprocs/internal/runtime
-github.com/emadolsky/automaxprocs/maxprocs
 # github.com/google/uuid v1.3.0
 ## explicit
 github.com/google/uuid
 # go.uber.org/atomic v1.7.0
 ## explicit; go 1.13
 go.uber.org/atomic
+# go.uber.org/automaxprocs v1.5.1
+## explicit; go 1.18
+go.uber.org/automaxprocs/internal/cgroups
+go.uber.org/automaxprocs/internal/runtime
+go.uber.org/automaxprocs/maxprocs
 # go.uber.org/multierr v1.6.0
 ## explicit; go 1.12
 go.uber.org/multierr

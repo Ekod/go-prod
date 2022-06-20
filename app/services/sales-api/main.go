@@ -14,7 +14,7 @@ import (
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers"
 	"github.com/ardanlabs/conf/v3"
-	"github.com/emadolsky/automaxprocs/maxprocs"
+	"go.uber.org/automaxprocs/maxprocs"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
