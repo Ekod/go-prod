@@ -3,6 +3,8 @@ SHELL := /bin/bash
 # Testing running system
 
 # expvarmon -ports=":4000" -vars="build,requests,goroutines,errors,panics,mem:memstats.Alloc"
+# hey -m GET -c 100 -n 10000 -H "Authorization: Bearer ${TOKEN}" http://localhost:3000/v1/test
+
 
 run:
 	go run app/services/sales-api/main.go | go run app/tooling/logfmt/main.go
@@ -10,6 +12,7 @@ run:
 tidy:
 	go mod tidy
 	go mod vendor
+	go fmt ./...
 
 # ==============================================================================
 #Environment setup
@@ -41,7 +44,7 @@ sales-api:
 # ==============================================================================
 # Running from within k8s/kind
 
-KIND_CLUSTER := ekod-cluster
+KIND_CLUSTER := sales-cluster
 
 kind-up:
 	kind create cluster \
@@ -79,3 +82,4 @@ kind-update-apply: all kind-load kind-apply
 kind-update: all kind-load kind-restart
 
 u: all kind-up kind-load kind-apply
+

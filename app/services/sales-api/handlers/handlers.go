@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/v1/testgrp"
-	"github.com/Ekod/go-prod/business/web/mid"
+	"github.com/Ekod/go-prod/business/web/v1/mid"
 	"github.com/Ekod/go-prod/foundation/web"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/debug/checkgrp"
@@ -64,6 +64,8 @@ func APIMux(cfg APIMuxConfig) *web.App {
 	app := web.NewApp(
 		cfg.Shutdown,
 		mid.Logger(cfg.Log),
+		mid.Errors(cfg.Log),
+		mid.Panics(),
 	)
 
 	v1(app, cfg)

@@ -51,11 +51,11 @@ func (a *App) Handle(method string, group string, path string, handler Handler, 
 
 	// The function to execute for each request.
 	h := func(rw http.ResponseWriter, r *http.Request) {
-		
+
 		// Pull the context from the request and
 		// use it as a separate parameter.
-		ctx:=r.Context()
-		
+		ctx := r.Context()
+
 		// Set the context with the required values to
 		// process the request.
 		v := Values{
