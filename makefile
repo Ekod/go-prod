@@ -92,3 +92,10 @@ u: all kind-up kind-load kind-apply
 
 admin:
 	go run app/tooling/sales-admin/main.go
+
+# ==============================================================================
+# Running tests within the local computer
+
+test:
+	go test ./... -count=1
+	staticcheck -checks=all ./...
