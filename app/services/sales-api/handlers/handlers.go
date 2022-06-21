@@ -8,6 +8,7 @@ import (
 	"os"
 
 	"github.com/Ekod/go-prod/app/services/sales-api/handlers/v1/testgrp"
+	"github.com/Ekod/go-prod/business/sys/auth"
 	"github.com/Ekod/go-prod/business/web/v1/mid"
 	"github.com/Ekod/go-prod/foundation/web"
 
@@ -55,6 +56,7 @@ func DebugMux(build string, log *zap.SugaredLogger) http.Handler {
 type APIMuxConfig struct {
 	Shutdown chan os.Signal
 	Log      *zap.SugaredLogger
+	Auth     *auth.Auth
 }
 
 // APIMux constructs a http.Handler with all application routes defined.
@@ -77,9 +79,14 @@ func APIMux(cfg APIMuxConfig) *web.App {
 func v1(app *web.App, cfg APIMuxConfig) {
 	const version = "v1"
 
+	authen := mid.Authenticate(cfg.Auth)
+	admin := mid.Authorize(auth.RoleAdmin)
+
 	tgh := testgrp.Handlers{
 		Log: cfg.Log,
 	}
 
 	app.Handle(http.MethodGet, version, "/test", tgh.Test)
+	app.Handle(http.MethodGet, version, "/testauth", tgh.Test, authen, admin)
+
 }

@@ -1,3 +1,4 @@
+make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: Entering directory `c:/Users/Ekod/Documents/prog/golang/go-prod'
 go run app/services/sales-api/main.go | go run app/tooling/logfmt/main.go
 make.exe: Leaving directory `c:/Users/Ekod/Documents/prog/golang/go-prod'
