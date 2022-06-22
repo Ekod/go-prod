@@ -20,17 +20,25 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       hostNetwork: true
       terminationGracePeriodSeconds: 60
+      initContainers:
+      # sales-api init container configuration
+      - name: init-migrate
+        image: sales-api-image
+        command: ['./sales-admin', 'migrate']
+      - name: init-seed
+        image: sales-api-image
+        command: ['./sales-admin', 'seed']
       containers:
       - name: sales-api
         image: sales-api-image
         ports:
         - name: sales-api
-          containerPort: 3000
+          containerPort: 8000
         - name: sales-api-debug
           containerPort: 4000
         readinessProbe: # readiness probes mark the service available to accept traffic.
           httpGet:
-            path: /debug/readiness
+            path: /health
             port: 4000
           initialDelaySeconds: 15
           periodSeconds: 15
@@ -75,7 +83,7 @@ spec:
     app: sales
   ports:
   - name: sales-api
-    port: 3000
+    port: 8000
     targetPort: sales-api
   - name: sales-api-debug
     port: 4000

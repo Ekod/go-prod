@@ -26,7 +26,7 @@ func (h Handlers) Readiness(w http.ResponseWriter, r *http.Request) {
 	ctx, cancel := context.WithTimeout(r.Context(), time.Second)
 	defer cancel()
 
-	status := "ok"
+	status := "OK"
 	statusCode := http.StatusOK
 	if err := database.StatusCheck(ctx, h.DB); err != nil {
 		status = "db not ready"

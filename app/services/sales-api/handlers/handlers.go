@@ -48,7 +48,7 @@ func DebugMux(build string, log *zap.SugaredLogger, db *sqlx.DB) http.Handler {
 		Log:   log,
 		DB:    db,
 	}
-	mux.HandleFunc("/debug/readiness", cgh.Readiness)
+	mux.HandleFunc("/health", cgh.Readiness)
 	mux.HandleFunc("/debug/liveness", cgh.Liveness)
 
 	return mux
@@ -70,6 +70,7 @@ func APIMux(cfg APIMuxConfig) *web.App {
 		cfg.Shutdown,
 		mid.Logger(cfg.Log),
 		mid.Errors(cfg.Log),
+		mid.Metrics(),
 		mid.Panics(),
 	)
 

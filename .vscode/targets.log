@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# ���� ������ Make, ���������� Tue Jun 21 09:22:18 2022
+# ���� ������ Make, ���������� Tue Jun 21 23:01:12 2022
 
 # ����������
 
@@ -31,7 +31,8 @@ HOMEDRIVE = C:
 # ��������������
 ^D = $(patsubst %/,%,$(dir $^))
 # Make-����
-CURDIR := c:/Users/Ekod/Documents/prog/golang/go-prod
+CURDIR := c:/Users/Ekod/Documents/prog/golang/go-p 
+rod
 # �� ���������
 SHELL := sh.exe
 # ���������� � �����
@@ -50,7 +51,7 @@ FPS_BROWSER_USER_PROFILE_STRING = Default
 TMP = C:\Users\Ekod\AppData\Local\Temp
 # ���������� � �����
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# Make-���� (from `makefile', line 37)
+# Make-���� (from `makefile', line 40)
 VERSION := 1.0
 # ���������� � �����
 VSCODE_VERBOSE_LOGGING = true
@@ -59,7 +60,7 @@ PROGRAMW6432 = C:\Program Files
 # ���������� � �����
 PROGRAMDATA = C:\ProgramData
 # ���������� � �����
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3d9d7d1e-bd9c-4588-a27a-6c71d4712464-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4fbf47e0-12e0-4d8e-8ef0-93fcf89e7b36-sock
 # ���������� � �����
 VSCODE_CWD = C:\Users\Ekod\Documents\prog\golang\go-prod
 # ���������� � �����
@@ -93,7 +94,7 @@ ELECTRON_RUN_AS_NODE = 1
 # ��������������
 %F = $(notdir $%)
 # ���������� � �����
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17552_ULCDQLIWGMBDAFMQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20212_JBLLNGGHRQGHFXRO
 # ���������� � �����
 VSCODE_PIPE_LOGGING = true
 # ���������� � �����
@@ -170,7 +171,7 @@ SYSTEMROOT = C:\Windows
 +F = $(notdir $+)
 # ���������� � �����
 APPDATA = C:\Users\Ekod\AppData\Roaming
-# Make-���� (from `makefile', line 51)
+# Make-���� (from `makefile', line 54)
 KIND_CLUSTER := sales-cluster
 # ���������� � �����
 TEMP = C:\Users\Ekod\AppData\Local\Temp
@@ -190,8 +191,7 @@ SUFFIXES :=
 SYSTEMDRIVE = C:
 # ���������� � �����
 SESSIONNAME = Console
-# ����������  
-� �����
+# ���������� � �����
 PROCESSOR_REVISION = 8d01
 # ���������� � �����
 MAKELEVEL := 0
@@ -202,7 +202,7 @@ PROCESSOR_LEVEL = 6
 # ���������� � �����
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # ���������� � �����
-VSCODE_PID = 17552
+VSCODE_PID = 20212
 # ���������� � �����
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-S1UQKPO
 # variable set hash-table stats:
@@ -220,7 +220,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-S1UQKPO
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (���� C:/Windows/System32/WindowsPowerShell/v1.0/, ����� ����������� 1655494732): 32 ������,��� ������������ �����.
 # /bin: ���������� �������� �������� ������� stat.
 # C:\Windows\System32\Wbem (���� C:/Windows/System32/Wbem, ����� ����������� 1655494732): 173 ������,��� ������������ �����.
-# . (���� c:/Users/Ekod/Documents/prog/golang/go-prod, ����� ����������� 1655736195): 15 ������,��� ������������ �����.
+# . (���� c:/Users/Ekod/Documents/prog/golang/go-prod, ����� ����������� 1655841599): 15 ������,��� ������������ �����.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (���� C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, ����� ����������� 1655485528): 10 ������,��� ������������ �����.
 # C:\ProgramData\chocolatey\bin (���� C:/ProgramData/chocolatey/bin, ����� ����������� 1655489468): 13 ������,��� ������������ �����.
 # C:\Windows\System32\OpenSSH\: ���������� �������� �������� ������� stat.
@@ -228,9 +228,10 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-S1UQKPO
 # C:\Users\Ekod\AppData\Local\Programs\Microsoft VS Code Insiders\bin (���� C:/Users/Ekod/AppData/Local/Programs/Microsoft VS Code Insiders/bin, ����� ����������� 1655486301): 4 ������,��� ������������ �����.
 # C:\Windows (���� C:/Windows, ����� ����������� 1655494731): 108 ������,��� ������������ �����.
 # C:\ProgramData\DockerDesktop\version-bin: ���������� �������� �������� ������� stat.
-# C:\Users\Ekod\AppData\Local\Microsoft\WindowsApps (���� C:/Users/Ekod/AppData/Local/Microsoft/WindowsApps, ����� ����������� 1655624548): 15 ������,��� ������������ �����.
-# C:\Program Files\Git\cmd (���� C:/Program Files/Git/cmd, ����� ����������� 1655486428): 8 ������,��� ������������ �����.
-# C:\Windows\system32 (���� C:/Windows/system32, ����� ����������� 1655751194): 2856 ������,��� ������������ �����.
+# C:\Users\Ekod\AppData\Local\Microsoft\WindowsApps (���� C:/Users/Ekod/AppData/Local/Microsoft/WindowsApps, ����� ����������� 1655835394): 15 ������,��� ������������ �����.
+# C:\Program Files\Git\cmd (���� C:/Program Files/Git/cmd, ����� ����������� 1655486428): 8 ������,��� ������������ �����. 
+
+# C:\Windows\system32 (���� C:/Windows/system32, ����� ����������� 1655837041): 2856 ������,��� ������������ �����.
 # C:\Users\Ekod\go\bin (���� C:/Users/Ekod/go/bin, ����� ����������� 1655735221): 12 ������,��� ������������ �����.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (���� C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, ����� ����������� 1655485333): 5 ������,��� ������������ �����.
 # C:\Program Files (x86)\GnuWin32\bin (���� C:/Program Files (x86)/GnuWin32/bin, ����� ����������� 1655486795): 5 ������,��� ������������ �����.
@@ -247,7 +248,7 @@ kind-logs:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 79):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 87):
 	kubectl logs -l app=sales --all-containers=true -f --tail=100 | go run app/tooling/logfmt/main.go
 	
 
@@ -255,7 +256,7 @@ kind-restart:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 82):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 90):
 	kubectl rollout restart deployment sales-pod
 	
 
@@ -263,7 +264,7 @@ kind-load:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 64):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 67):
 	cd zarf/k8s/kind/sales-pod; kustomize edit set image sales-api-image=sales-api-amd64:$(VERSION)
 	kind load docker-image sales-api-amd64:$(VERSION) --name $(KIND_CLUSTER)
 	
@@ -272,7 +273,7 @@ dev.setup.win:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 30):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 33):
 	choco list kind || choco install kind -y
 	choco list kubectl || choco install kubectl -y
 	choco list kustomize || choco install kustomize -y
@@ -282,7 +283,7 @@ d:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 61):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 64):
 	kind delete cluster --name $(KIND_CLUSTER)
 	
 
@@ -304,7 +305,7 @@ admin:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 91):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 99):
 	go run app/tooling/sales-admin/main.go
 	
 
@@ -319,10 +320,19 @@ kind-update-apply: all kind-load kind-apply
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
 
+test:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 105):
+	go test ./... -count=1
+	staticcheck -checks=all ./...
+	
+
 # �� �������� �����:
 makefile:
 #  ������������ ����� ������� ������
-#  ����� ���������� ��������� 2022-06-20 17:42:52
+#  ����� ���������� ��������� 2022-06-21 21:35:15
 #  ���� ��� ��������.
 #  ������� ���������.
 # variable set hash-table stats:
@@ -332,8 +342,8 @@ kind-status-sales:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 76):
-	kubectl get pods -o wide --watch
+#  �������, ������� ������� ���������  (�� `makefile', ������ 81):
+	kubectl get pods -o wide --watch --namespace=sales-system
 	
 
 # �� �������� �����:
@@ -346,7 +356,10 @@ kind-apply:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 68):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 
+ 71):
+	kustomize build zarf/k8s/kind/database-pod | kubectl apply -f -
+	kubectl wait --namespace=database-system --timeout=120s --for=condition=Available deployment/database-pod
 	kustomize build zarf/k8s/kind/sales-pod | kubectl apply -f -
 	
 
@@ -354,9 +367,8 @@ run:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 14):
-	go run app/se 
-rvices/sales-api/main.go | go run app/tooling/logfmt/main.go
+#  �������, ������� ������� ���������  (�� `makefile', ������ 17):
+	go run app/services/sales-api/main.go | go run app/tooling/logfmt/main.go
 	
 
 sales-api:
@@ -383,7 +395,7 @@ sales-api:
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  �������, ������� ������� ���������  (�� `makefile', ������ 42):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 45):
 	docker build \
 	-f zarf/docker/dockerfile.sales-api \
 	-t sales-api-amd64:$(VERSION) \
@@ -396,7 +408,7 @@ tidy:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 17):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 20):
 	go mod tidy
 	go mod vendor
 	go fmt ./...
@@ -406,7 +418,7 @@ kind-status:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 71):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 76):
 	kubectl get nodes -o wide
 	kubectl get svc -o wide
 	kubectl get pods -o wide --watch --all-namespaces
@@ -416,18 +428,26 @@ dev.setup.mac:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 24):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 27):
 	brew update
 	brew list kind || brew install kind
 	brew list kubectl || brew install kubectl
 	brew list kustomize || brew install kustomize
 	
 
+kind-status-db:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 84):
+	kubectl get pods -o wide --watch --namespace=database-system
+	
+
 kind-up:
 #  ����� ������� ������ �� ������������.
 #  ����� ��������� �� ���� �� �����������.
 #  ���� �� ��� ��������.
-#  �������, ������� ������� ���������  (�� `makefile', ������ 54):
+#  �������, ������� ������� ���������  (�� `makefile', ������ 57):
 	kind create cluster \
 	--image kindest/node:v1.23.0@sha256:49824ab1727c04e56a21a5d8372a402fcd32ea51ac96a2706a12af38934f81ac \
 	--name $(KIND_CLUSTER) \
@@ -441,11 +461,12 @@ kind-update: all kind-load kind-restart
 #  ���� �� ��� ��������.
 
 # files hash-table stats:
-# Load=21/1024=2%, Rehash=0, Collisions=0/45=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/47=0%
 # ���� ������ VPATH
 
 # �� ��������� ���� ������ `vpath'.
 
+ 
 # �� ��������� ����� (���������� `VPATH') ���� ������.
 
 # # of strings in strcache: 1
@@ -453,6 +474,6 @@ kind-update: all kind-load kind-restart
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# ������ ���� ������ Make ��������� Tue Jun 21 09:22:18 2022
+# ������ ���� ������ Make ��������� Tue Jun 21 23:01:12 2022
 
  
